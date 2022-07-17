@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* PRODUCTS */
+
+:root{
+  --titles: #355E3B;
+  --secondary: rgb(0, 230, 0);
+}
+.product {
+  position: relative;
+  overflow: inherit;
+  padding: 20px;
+}
+.product-category {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+.product-container {
+  justify-content: center;
+  margin:0 auto;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x:auto;
+  overflow-y: hidden;
+  height: 500px;
+}
+/*slideshow sa home na clickable*/
+.container1{
+   
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.div_container1{
+    width: 350px;
+    height: 550px;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 0.5s;
+    overflow-x: auto;
+}
+
+.animate1{
+    animation-name: anim;
+    animation-duration: 2s;
+}
+.div_container1 img{
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.icon{
+    position: absolute;
+
+}
+.fas{
+    font-size: 100px;
+    padding: 15px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+.fa-angle-left1{
+    position: absolute;
+    left: -265px;
+    top: -40px;
+}
+.fa-angle-right1{
+    position: absolute;
+    right:-265px;
+    top: -40px;
+}
+.fa-angle-right1:hover{
+    background-color: #ddd;
+}
+.fa-bars:before {
+    content: "\f0c9";
+    color: white;
+    padding-right: 10px;
+}
+.fa-angle-left1:hover{
+    background-color: #ddd;
+
+}
+.num1{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.animate{
+    animation-name: anim;
+    animation-duration: 2s;
+}
+@keyframes anim {
+    0%{
+        transform: skew(90);
+        opacity: 0;
+    }
+}
+/*end ng clickable na sinasabi ko*/
+
+.smrt-cty{
+  display: flex;
+  justify-content: center;
+}
+.product-container::-webkit-scrollbar{
+  height: 1rem;
+  
+}
+.product-container::-webkit-scrollbar-track{
+  background: transparent;
+}
+.product-container::-webkit-scrollbar-thumb{
+  background: var(--secondary);
+  border-radius: 2rem;
+  width: 100px;
+}
+.product-card {
+  flex: 0 0 auto;
+  width: 260px;
+  height: 450px;
+  margin-right: 30px;
+}
+.product-card-c {
+  flex: 0 0 auto;
+  width:300px;
+  height: 400px;
+
+
+
+}
+
+.product-image {
+  position: relative;
+  top: 50px;
+  width: 103%;
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 0 5px 2px 0 rgba(172, 168, 168, 0.43);
+  border-radius: 5%;
+
+}
+
+.product-image:hover{
+transform: scale(1.3);
+
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.card-btn {
+ position: relative;
+    bottom: 40px;
+    left: 30px;
+  transform: translateX(-50%);
+  padding: 8px;
+  width: 90%;
+  text-transform: capitalize;
+  color: black;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+
+}
+.card-btn:hover {
+  background: var(--secondary);
+  color: #fff;
+}
+.card-btn1 {
+ position: relative;
+    bottom: 40px;
+    left: 30px;
+  transform: translateX(-50%);
+  padding: 8px;
+  width: 90%;
+  text-transform: capitalize;
+  color: black;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+
+}
+.card-btn1:hover {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.product-brand {
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+padding-top:50px;
+  font-weight: 700;
+
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+
+}
+
+
+
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+/*gallery*/
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  width: 20%;
+  padding: 5px;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+}
+.sol{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* content solutions css */
+.fuel{
+  background:url(../images/solution/fuel/f1bg.png) no-repeat;
+}
+.tech .row .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.tech .row .content h3{
+  font-size: 3.3em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.tech .tech-title{
+  background-color: var(--secondary);
+  clip-path: polygon(0 0, 96% 0, 100% 100%, 0 100%);
+}
+.tech .row .tech-content {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 4% 100%);
+  background-color:  rgba(185, 155, 245, 0.548);
+  padding-left: 30px;
+}
+
+.fuel-tech .fa,
+.fuel-tech .fi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5em;
+  }
+
+.fuel-tech .fi .image{
+  flex: 1;
+  order: 2;
+  }
+.fuel-tech .fi .image img{
+  margin: auto;
+}
+
+.fuel-tech .fi .content{
+  flex: 2;
+  order: 1;
+}
+.fuel-tech .fa .content{
+  flex: 2;
+  order: 2;
+  font-weight: 400;
+}
+.fuel-tech .fa .image{
+  flex: 1;
+  order: 1;
+}
+
+.lng{
+  background:url(../images/solution/lng/lngbg.png) no-repeat;
+}
+/* lng 2nd content */
+
+.about-lng{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: azure;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+/* .about-lng div{
+  border: 1px solid black;
+  padding: 10px;
+} */
+.about-lng .lng-box{
+  flex-basis: 310px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.lng-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  
+}
+.lng-image{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden; 
+}
+
+.lng-content h3{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px;
+}
+.lng-content p{
+  font-size: 1.6rem;
+  margin: 8px;
+  text-align: justify;
+
+}
+
+.lng-deliver{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 10rem;
+  
+}
+.lng-deliver .lng-box{
+  flex-basis: 40%;
+  
+}
+.lng-content p{
+  text-transform: none; 
+}
+.stages .row{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.stages .row .content img{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 3px 0 rgba(172, 168, 168, 0.43);
+
+}
+
+.agricultural{
+  background:url(../images/solution/agricultural/cornbg.png) no-repeat;
+}
+
+.solar{
+  background:url(../images/solution/solar/solarbg.png) no-repeat;
+}
+.energreen{
+  background:url(../images/solution/energree/egbg.png) no-repeat;
+}
+.carbonwood{
+  background:url(../images/solution/carbon/carbonbg.png) no-repeat;
+}
+.greenhouse{
+  background:url(../images/solution/greenhouse/ghbg.png) no-repeat;
+}
+.smrtct{
+  background:url(../images/solution/smartcity/bgs.jpg) no-repeat;
+}
+
+.smrtct .row{
+  justify-content: center;
+  align-items: center;
+}
+.smrtct .row .image{
+  order:2;
+}
+.smrtct .row .content{
+  order: 1;
+}
+.smrtct2{
+  background:url(../images/solution/smartcity/bgs2.jpg) no-repeat;
+}
+.smrtct3{
+  background:url(../images/solution/smartcity/bgs3.jpg) no-repeat;
+}
+.smrtct3 .row{
+  justify-content: center;
+  align-items: center;
+}
+.smrtct3 .row .image{
+  order:2;
+}
+.smrtct3 .row .content{
+  order: 1;
+}
+.smrtct4{
+  background:url(../images/solution/smartcity/bgs4.jpg) no-repeat;
+}
+.smrtct-last .row .image{
+  visibility: visible;
+}
+
+.pfm{
+  background:url(../images/solution/pf/bgs2.jpg) no-repeat;
+}
+
+.pfm .row{
+  justify-content: center;
+  align-items: center;
+}
+.logistics{
+  background:url(../images/solution/logistics/logibg.png) no-repeat;
+}
+
+
+.about-tree .row{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.column-trees {
+  width: 20%;
+  padding: 5px;
+  left: 0;
+  right: 0;
+  width:  250px;
+  height: 250px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-trees img:hover{
+  transform: scale(1.05);
+  
+}
+
+
+.sol .row{
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  /* background:var(--black); */
+  flex-wrap: wrap;
+
+}
+
+.sol .row .content{
+  flex:1 1 45rem;
+  padding:2rem;
+  margin-top: 50px;
+ 
+}
+
+.sol .row .content h3{
+  font-size: 3.5rem;
+  color:var(--black);
+}
+
+.sol .row .content p{
+  font-size: 1.6rem;
+  color:var(--black);
+  padding:1rem 0;
+  line-height: 1.8;
+  text-transform: none;
+}
+.sol .row .image{
+  flex:1 1 45rem;
+  visibility: hidden;
+}
+
+.sol .row .content ul{
+  margin-left: 50px;
+  font-size: 1.6rem;
+  color:var(--black);
+  padding:1rem 0;
+  line-height: 1.8;
+  text-transform: none;
+}
+
+.sol .row .image img{
+  width: 100%;
+}
+.spectrum{
+  position: relative;
+  margin-left: 2em;
+}
+.spectrum .lng-title{
+  text-transform:uppercase;
+}
+.spectrum .lng-title::before{
+  content: '';
+  position: absolute;
+  left: -1.6em;
+  background: var(--secondary);
+  width: 1.4em;
+  height: 1.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  box-sizing: border-box;
+
+}
+.sol .row .content .spectrum p{
+  margin-left: .3em;
+  margin-right: .5em;
+}
+.content ol{
+  margin-left: 3em;
+}
+.content ol li{
+  font-size: 1.7em;
+  text-indent: 1em;
+}
+
+/* country */
+.mexico-1{
+  background:url(../images/ventures/mexico/bgs.jpg) no-repeat;
+}
+
+/* flex whole pic */
+.solar-pv{
+  min-height: 50vh;
+  background-color: rgb(46, 43, 66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.solar-pv .content{
+  width: 100%;
+  color: #fff;
+}
+.solar-pv h3{
+  font-size: 5em;
+  text-align: center;
+}
+.solar-pv p{
+  font-size: 1.5em;
+  padding: 20px;
+  text-transform: none
+}
+@media (max-width:1360px){
+
+  .movebtn{
+    visibility: visible;
+  }
+  .smrt-cty {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .solution-opt{
+    margin-top: 100px;
+  }
+  .smrtct .row .content{
+    flex:1;
+  }
+  .smrtct2 .row .content{
+    flex:1;
+  }
+ 
+}
+@media (max-width:991px){
+  .fuel .row .image,
+   .lng .row .image,
+  /*.solar .row .image, */
+  .greenhouse .row .image,
+  .smrtct .row .image,
+  .smrtct2 .row .image,
+  .smrtct3 .row .image,
+  .smrtct4 .row .image,
+  .pfm .row .image,
+  .logistics .row .image
+  {
+    visibility: visible;
+  }
+  .about-lng .lng-box{
+    flex-basis: 100%;
+  }
+  .lng-deliver .lng-box{
+    flex-basis: 100%;
+  }
+  .solar-pv .image img{
+    width: 100%;
+  }
+  .solar-pv{
+    display: block;
+  }
+ 
+}
+@media (max-width:768px){
+  
+  .sol{
+    background: none;
+    min-height: 70vh;
+  }
+  .agricultural{
+    background:url(../images/solution/agricultural/cornbg2.png) no-repeat;
+  }
+  .solar{
+    background: url(../images/solution/solar/solar-small-bg.png) no-repeat;
+  }
+  .carbonwood{
+    background: url(../images/solution/carbon/carbonbg-small.png) no-repeat;
+  }
+
+  .sol{
+    display: flex;
+  }
+  .sol .content{
+    order: 2;
+    margin-bottom: -47px;
+  }
+  .sol .image{
+    margin-top: 50px;
+    margin-bottom: -40px;
+  }
+
+  /* fuels */
+  .tech .row .content{
+    border: .5px solid mediumpurple;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    padding-left: 15px;
+  }
+  .tech{
+    margin-top: -30px;
+  }
+  .fuel-tech .fi,
+  .fuel-tech .fa{
+    display: block;
+    margin-top: -20px;
+  }
+  .fuel-tech .fi .image{
+    order: 1;
+    margin-left: 0px;
+  }
+  .fuel-tech .fi .content{
+    order: 2;
+  }
+  .lng-deliver .lng-row{
+    display: block;
+  }
+  .lng-deliver .lng-row .image{
+    margin-left: 0;
+  }
+  .smrtct .row {
+    display:block ;
+  }
+  .smrtct2 .row .image{
+    order:1;
+  }
+  .smrtct2 .row .content{
+    order: 2;
+  }
+  .smrtct4 .row .image{
+    order:2;
+  }
+  .smrtct4 .row .content{
+    order: 1;
+  }
+}
+
+/* GALLERY */
+
+.row-gallery {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.contact-box{
+  float: left;
+}
+
+/* carousel */
+.bg{
+  padding-left: auto; 
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+  width: 90%;
+
+}
+.h1{ 
+text-decoration-style: underline; }
+.p{
+  font-size: 1px;
+}
+.ul{
+   text-align: center;
+    list-style-position: inside;
+}
+.b1, .b2, .b3, .b4 , .b5, .b6{
+   display:inline-block;
+   border-radius: 5%;
+   position: relative;
+   padding: 5px;
+   margin: 10px;
+   float:middle;
+   width:30%;
+   height:210px;
+   background-color: white;
+   align-items: center;
+   font-size: 15px;
+   padding-right: auto;
+   padding-left: auto;
+
+}
+.b1 img{
+   display:inline-block;
+   position: relative;
+   justify-content: center;
+   top: 25px;
+   margin: 2px;
+   float:left;
+   width:80%;
+   height:120px;
+   background-color: white;
+   justify-content:  center;
+
+   padding-left: 35px;
+ }
+.b2 img{
+   display:inline-block;
+   position: relative;
+   top: 25px;
+   margin: 2px;
+   float:left;
+   width:80%;
+   height:120px;
+   background-color: white;
+   justify-content:  center;
+
+   padding-left: 35px;
+ }
+.b3 img{
+   display:inline-block;
+   position: relative;
+   top: 25px;
+   margin: 2px;
+   float:left;
+   width:75%;
+   height:120px;
+   background-color: white;
+   justify-content:  center;
+
+   padding-left: 35px;
+ }
+ .b4 img{
+   display:inline-block;
+   position: relative;
+   top: 25px;
+   margin: 2px;
+   float:left;
+   width:80%;
+   height:120px;
+   background-color: white;
+   justify-content:  center;
+
+   padding-left: 35px;
+ }
+ .b5 img{
+   display:inline-block;
+   position: relative;
+   top: 25px;
+   margin: 2px;
+   float:left;
+   width:80%;
+   height:120px;
+   background-color: white;
+   justify-content: center;
+
+   padding-left: 35px;
+ }
+ .b6 img{
+   display:inline-block;
+   position: relative;
+   top: 25px;
+   margin: 5px;
+   float:left;
+   width:80%;
+   height:120px;
+   background-color: white;
+   justify-content: center;
+   padding-left: 35px;
+ }
+.text{
+  position: relative;
+  padding-left: 10px;
+  padding-top: 10px;
+  justify-content: center;
+  font-size: 12px;
+  font-style: roboto;
+
+}
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .text, .b1, .b2 , .b3, .b4, .b5, .b6{
+    width: 60%;
+  }
+
+@media only screen and (max-width: 620px) {
+.product-container{
+    padding-left: 280px;
+}
+} 
